@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InstaLite</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h2>InstaLite</h2>
+    </div>
+
+    <div class="container">
+
+        <form id="post-form" class="card">
+
+            <h3>Create Post</h3>
+
+            <p>Share a moment with your followers</p>
+
+            <input
+                type="text"
+                id="caption-input"
+                placeholder="What's on your mind?"
+                required
+            >
+
+            <label for="image-input">
+                + Add photo
+            </label>
+
+            <span>Choose an image from your device</span>
+
+            <input
+                type="file"
+                id="image-input"
+                accept="image/*"
+                required
+            >
+
+            <button type="submit">
+                ➤ Share Post
+            </button>
+
+        </form>
+
+        <div id="feed"></div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
